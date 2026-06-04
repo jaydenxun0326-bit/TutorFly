@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+<body>
+    <h1 style="
+        color:white; 
+        font-family: Geneva, Geneva; 
+        font-style: bold; 
+        font-size: 48px; 
+        text-align: center; 
+        margin-top: 20px;">Tutoring. Reimagined.</h1>
+    <p style="color:white; 
+              font-family: Geneva, Geneva;
+              font-size: 18px;
+              text-align: center; 
+              margin-top: 20px;">Want to have a relatable tutor that could understands your struggles? TutorFly is the service for you!</p>
+    <button style="display: block; 
+                   margin: 20px auto;
+                   padding: 10px 30px; 
+                   font-size: 18px; 
+                   background-color: #a365ff; 
+                   color: white; 
+                   border: none;
+                   border-radius: 5px; 
+                   cursor: pointer;" 
+            onclick="window.location.href='{% url 'home' %}'">Get Started
+    </button>
+
+    
+</body>
+
+{% endblock page_content %}

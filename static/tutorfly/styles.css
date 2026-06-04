@@ -1,0 +1,23 @@
+body {
+    background-image: linear-gradient(to right, #7f71fc, #87c7fb);
+    animation-name: slideUp;
+    animation-duration: 1s;
+}
+
+h1 {
+    animation-name: slideUp;
+    animation-duration: 0.5s;
+}
+
+p1 {
+    
+    animation-name: slideUp;
+    animation-duration: 4s;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
