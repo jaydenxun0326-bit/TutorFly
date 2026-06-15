@@ -10,20 +10,7 @@
             rel="stylesheet"
         >
     </head>
-    <body class="container">
-        <header class="banner">
-            <div class="container">
-                <div id="logo-container">
-                    <img id="logo" src="{% static 'tutorfly/tutorfly_logo.png' %}" alt="TutorFly Logo" width="150" height="150"></img>
-                </div>
-                
-            
-                <navbar>
-                    <ul class="navlinks">
-                        <li><a style="font-family: Geneva, Geneva; text-color: #ffffff;" href="{% url 'home' %}">Home</a></li>
-                    </ul>
-                </navbar>
-            </div>
+    <body>
         {% block page_content %}{% endblock page_content %}
     </body>
 </html>

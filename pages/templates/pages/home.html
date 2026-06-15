@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block page_content %}
+<body class="container">
+<header class="banner">
+<div class="container">
+<div id="logo-container">
+    <img id="logo" src="{% static 'tutorfly/tutorfly_logo.png' %}" alt="TutorFly Logo" width="150" height="150"></img>
+</div>
+
+</div>
+</body>
 
 <body>
     <h1 style="
@@ -25,7 +34,7 @@
                    border: none;
                    border-radius: 5px; 
                    cursor: pointer;" 
-            onclick="window.location.href='{% url 'home' %}'">Get Started
+            onclick="window.location.href='{% url 'login' %}'">Get Started
     </button>
 
     

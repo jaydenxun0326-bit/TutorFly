@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<div style="
+    font-family: Geneva, Geneva;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    class="login-page">
+
+  <div class="login-panel" style="position: relative; align-items: center;">
+
+    <form class="login-form" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <button class="form-submit" type="submit">Login</button>
+
+      <button style="width: 24px; 
+                     height: 24px; 
+                     background: none; 
+                     border: none;" 
+              onclick="{% url 'login' %}">
+        <img src="{% static 'tutorfly/google.png' %}" 
+            alt="Google" style="width: 24px; height: 24px;"></img>
+      </button>
+
+    </form>
+
+    <div style="position: relative;"
+        font-family: Geneva, Geneva;
+        font-size: 16px;
+        text-align: center;
+    " class="signup-panel">
+      <h2>New to TutorFly?</h2>
+      <a class="btn btn-primary" href="">Sign Up</a>
+    </div>
+
+  </div>
+
+</div>
+{% endblock page_content %}

@@ -21,3 +21,86 @@ p1 {
     }
 }
 
+.login-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+}
+
+.login-form, .signup-panel {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border: 1px solid rgb(144, 59, 255);
+    border-radius: 16px;
+    padding: 30px;
+    width: 320px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-form input,
+.login-form label,
+.login-form button {
+    width: 100%;
+}
+
+.login-form input {
+    border-radius: 10px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px 14px;
+    font-size: 16px;
+}
+
+.login-form button,
+.signup-panel .btn {
+    background-color: #a86eff;
+    color: white;
+    border: none;
+    padding: 16px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.signup-panel {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signup-panel h2 {
+    color: white;
+    margin-bottom: 24px;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form label {
+    color: white;
+    font-weight: 500;
+}
+
+.login-form button:hover,
+.signup-panel .btn:hover {
+    background-color: #9d54ff;
+}
+
+
+
